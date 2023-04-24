@@ -6,18 +6,21 @@
 
 table {
 	border-collapse: collapse;
-	width: 100%;
-	margin-top: 30px;
+	width: 50% !important;
+	margin: 30px auto;
 }
 
 td {
-	width: 50px;
-	height: 50px;
 	padding: 0;
 	border: 1px solid black;
 	text-align: center;
 	vertical-align: middle;
 	border-radius: 2px;
+
+	width: 1% !important;
+	white-space: nowrap !important;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
 }
 
 .word-cell {
@@ -44,10 +47,18 @@ td {
 	margin-top: 10px;
 }
 
-.cyk-table {
-	background-color: rgba(0, 0, 0, 0.25) !important;
-	max-width: 50%;
+.cyk-table.active {
+	border: 1px solid lightgray;
 	padding: 30px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 20px;
+}
+
+.cyk-table {
+	background-color: none;
+}
+
+section {
+	margin-top: 20px;
 }

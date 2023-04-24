@@ -112,6 +112,7 @@ function drawTable(tableArray, table, success) {
 		alertDiv.classList.add('alert-danger');
 		alertDiv.innerHTML = 'The given string can NOT be derived from the given grammar';
 	}
+	table.parentElement.classList.add('active');
 	table.parentElement.parentElement.appendChild(alertDiv);
 }
 
