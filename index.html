@@ -21,6 +21,9 @@
 		</header>
 		<section class="container">
 			<h2>Grammar</h2>
+			<p>Please provide the grammar in CNF form.</p>
+			<p>Press '|', the pipe character for "or".</p>
+			<p>Press 'Enter' or the button below to add a new production rule.</p>
 			<div id="grammar">
 				<form action="index.html">
 					<div class="grammar-row input-group">
@@ -31,21 +34,21 @@
 						<input type="text" value="BC" class="value form-control" />
 					</div>
 					<div class="grammar-row input-group">
-						<input type="text" maxlength="1" value="A" class="variable form-control" />
+						<input type="text" maxlength="1" value="A" class="variable form-control" required />
 						<div class="input-group-text">→</div>
 						<input type="text" value="BA" class="value form-control" />
 						<div class="input-group-text">|</div>
 						<input type="text" value="a" class="value form-control" />
 					</div>
 					<div class="grammar-row input-group">
-						<input type="text" maxlength="1" value="B" class="variable form-control" />
+						<input type="text" maxlength="1" value="B" class="variable form-control" required />
 						<div class="input-group-text">→</div>
 						<input type="text" value="CC" class="value form-control" />
 						<div class="input-group-text">|</div>
 						<input type="text" value="b" class="value form-control" />
 					</div>
 					<div class="grammar-row input-group">
-						<input type="text" maxlength="1" value="C" class="variable form-control" />
+						<input type="text" maxlength="1" value="C" class="variable form-control" required />
 						<div class="input-group-text">→</div>
 						<input type="text" value="AB" class="value form-control" />
 						<div class="input-group-text">|</div>

@@ -18,6 +18,12 @@ document.addEventListener('DOMContentLoaded', function () {
 			newInput.focus();
 		}
 
+		if (field.classList.contains('value') && event.key === 'Enter') {
+			event.preventDefault();
+			var addbtn = document.getElementById('add');
+			addbtn.click();
+		}
+
 		if (field.classList.contains('value') && event.key === 'Backspace' && field.value === '') {
 			if (parent.querySelectorAll('.value').length > 1) {
 				event.preventDefault();
@@ -55,5 +61,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		rowDiv.appendChild(valueInput);
 
 		inputContainer.insertBefore(rowDiv, addButton);
+		variableInput.focus();
 	});
 });
